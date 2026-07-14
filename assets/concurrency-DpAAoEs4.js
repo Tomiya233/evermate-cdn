@@ -1,0 +1,1 @@
+async function c(n,r,t=6){if(!n.length)return;let a=0;const e=Array.from({length:Math.max(1,Math.min(t,n.length))},async()=>{for(;a<n.length;){const l=a;a+=1,await r(n[l])}});await Promise.all(e)}export{c as r};
